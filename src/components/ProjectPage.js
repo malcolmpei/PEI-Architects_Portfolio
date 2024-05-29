@@ -43,27 +43,12 @@ export const ProjectPage = ({project, handleClose, handlePreviousProject, handle
 
     return (
         <div className={`${isMobile() ? 'mobile-page' : 'project-page' }`} ref={containerRef} onWheel={handleWheel}>
-            {/*<div className={'page-1'}>*/}
-            {/*    <div className={'project-details'}>*/}
-            {/*        <div className={'project-text-container'}>*/}
-            {/*            <div className={'project-info-title'}>client</div>*/}
-            {/*            <div className={'project-info-content client'}>{client}</div>*/}
-            {/*            <div className={'project-info-title'}>project type</div>*/}
-            {/*            <div className={'project-info-content'}>{type}</div>*/}
-            {/*            <div className={'project-info-title'}>size</div>*/}
-            {/*            <div className={'project-info-content client'}>{size}</div>*/}
-            {/*            <div className={'project-info-date'}>{year}</div>*/}
-            {/*        </div>*/}
-            {/*        <img className={'detail-image'} src={project.data.icon} alt={''}/>*/}
-            {/*    </div>*/}
-            {/*    <img className={'page-1-image'} src={project.data.main} alt={''}/>*/}
-            {/*    <div className={'page-1-sizer'}></div>*/}
-            {/*</div>*/}
             {project.data.content && project.data.content.map((content, index) => {
                 if (content.type === 'image') {
                     return <img key={'image-' + index} className={`${isMobile() ? 'mobile-image' : 'project-image'}`} src={content.data} alt={''}/>
                 } else if (content.type === 'text') {
                     return null;
+                    // Disabled 
                     return <div className={'project-text-box'}>
                         <div className={'project-text'}>{content.data}</div>
                     </div>
@@ -81,6 +66,7 @@ export const ProjectPage = ({project, handleClose, handlePreviousProject, handle
                     </div>
                 } else if (content.type === 'quote'){
                     return null;
+                    // Disabled
                     return <div className={'project-text-box'}>
                         <div className={'project-quote'}>
                             <div className={'project-quote-text'}>{highlightText(`"${content.data}"`, content.keys)}</div>
