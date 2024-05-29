@@ -1,0 +1,241 @@
+﻿.project-content {
+    /*border: 2px solid black;*/
+    /*overflow: hidden;*/
+}
+
+.project-page {
+    width: calc(90vw);
+    height: calc(75vh);
+    font-family: "futura-pt", sans-serif;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /*border: 2px solid black;*/
+}
+
+.mobile-page{
+    width: calc(90vw);
+    height: calc(75vh);
+    font-family: "futura-pt", sans-serif;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page-1 {
+    display: flex;
+    justify-content: center;
+    /*overflow: hidden;*/
+    gap: 1%;
+    min-width: 90vw;
+    max-height: 73vh;
+    /*border: 2px solid red;*/
+    position: relative;
+}
+
+.project-details {
+    min-width: fit-content;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-text-container {
+    object-fit: contain;
+}
+
+.project-info-title {
+    font-weight: 700;
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+.project-info-date {
+    font-size: 10vh;
+    font-weight: 700;
+}
+
+.project-info-content {
+    margin-bottom: calc(1.5vh);
+    font-size: 2vh;
+}
+
+.client {
+    /*border: 2px solid black;*/
+    max-width: 15vw;
+    min-width: 5vw;
+}
+
+.detail-image {
+    max-height: 50%;
+    /*width: 100%;*/
+    min-width: fit-content;
+    object-fit: contain;
+    object-position: center bottom;
+    /*border: 2px solid pink;*/
+}
+
+.page-1-image {
+    /*min-width: 100%;*/
+    object-fit: cover;
+    /*object-position: right;*/
+    max-width: 60%;
+    height: 100%;
+    /*border: 2px solid red;*/
+}
+
+.page-1-sizer {
+    position: absolute;
+    background-color: #b83232;
+    width: 1080px;
+    height: 680px;
+    opacity: 0;
+}
+
+.project-buttons-container {
+    overflow: unset;
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    z-index: -2;
+}
+
+.project-buttons {
+    position: absolute;
+    bottom: -5%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: calc(2vh);
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    overflow: hidden;
+    z-index: 1;
+}
+.button:hover {
+    color: #b83232;
+    cursor: pointer;
+}
+
+/*.page {*/
+/*    max-height: 94.5%;*/
+/*    min-width: 100%;*/
+/*    display: flex;*/
+/*    overflow: hidden;*/
+/*    border: 2px solid purple;*/
+/*}*/
+
+.project-image {
+    min-width: 100%;
+    margin: auto;
+    max-height: 98%;
+    object-fit: contain;
+}
+
+.mobile-image {
+    margin: auto;
+    max-width: 90vw;
+}
+
+.project-text-box {
+    margin: 5%;
+    min-width: fit-content;
+    min-height: 80%;
+    /*border: 2px solid red;*/
+}
+
+.project-quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text {
+    font-size: calc(5vh);
+}
+
+.project-quote-text {
+    font-size: calc(4.5vh);
+    font-style: italic;
+    padding-bottom: 5vh;
+}
+
+.highlight-box {
+    display: flex;
+    gap: 0.5%;
+    flex-wrap: wrap;
+}
+
+.highlight {
+    transition: color 10000ms;
+}
+
+.highlight:hover {
+    color: #b83232;
+    transition: none;
+}
+
+.project-quote-title,
+.project-quote-author {
+    text-align: right;
+    font-size: calc(2vh);
+}
+
+.project-quote-author {
+    font-weight: 700;
+}
+
+.project-video {
+    border: none;
+    min-width: 90vw;
+    min-height: 65vh;
+}
+
+.close-button {
+    color: gray;
+    transition: 1500ms ease;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #b83232;
+    transform: rotateZ(360deg);
+}
+
+.arrow-right,
+.arrow-left {
+    position: absolute;
+    top: 50%;
+}
+
+.arrow-right {
+    right:-2%;
+}
+
+.arrow-left {
+    left: -2%;
+}
+
+.arrow-right-timeline,
+.arrow-right {
+    transform: scale(200%);
+}
+
+.arrow-left-timeline,
+.arrow-left {
+    transform: rotateZ(180deg) scale(200%);
+}
+
+/*.project-arrows {*/
+/*    position: absolute;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    width: 90vw;*/
+/*    height: 70vh;*/
+/*    z-index: -1;*/
+/*    overflow: hidden;*/
+/*    border: 2px solid red;*/
+/*}*/
